@@ -2,10 +2,11 @@
   "name": "@monorepo/scripts",
   "version": "0.1.0",
   "license": "MIT",
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "scripts": {
     "generate:sx": "ts-node ./src/generate:sx/index.ts",
-
     "lint": "tsc && yarn lint:eslint",
     "lint:eslint": "eslint 'src/**/*.ts'",
     "format": "prettier --write 'src/**/*.ts' && yarn lint:eslint --fix",
@@ -15,11 +16,12 @@
     "commander": "^11.1.0"
   },
   "devDependencies": {
-    "ts-node": "^10.9.1",
-    "typescript": "^5.2.2",
+    "@monorepo/eslint-config-base": "^0.1.2",
+    "@types/node": "^20.9.1",
     "eslint": "^8.53.0",
-    "prettier": "^3.0.3",
     "eslint-plugin-prettier": "^5.0.1",
-    "@monorepo/eslint-config-base": "^0.1.2"
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   }
 }

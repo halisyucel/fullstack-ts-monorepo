@@ -1,24 +1,17 @@
-$border-width: (
-  'none': 0,
-  'thin': 1,
-  'medium': 2,
-  'thick': 4,
-);
+@import '../abstracts/mixins';
+@import '../abstracts/functions';
 
-$border-style: (
+@include generate('borderWidth', 'border-width', (
+  'none': #{pxrem(0)},
+  'thin': #{pxrem(1)},
+  'medium': #{pxrem(2)},
+  'thick': #{pxrem(4)},
+));
+
+@include generate('borderStyle', 'border-style', (
   'solid': solid,
   'dashed': dashed,
   'dotted': dotted,
   'double': double,
   'none': none,
-);
-
-:root {
-  @each $width, $value in $border-width {
-    --#{$library-prefix}-borderWidth-#{$width}: #{pxrem($value)};
-  }
-
-  @each $style, $value in $border-style {
-    --#{$library-prefix}-borderStyle-#{$style}: #{$value};
-  }
-}
+));

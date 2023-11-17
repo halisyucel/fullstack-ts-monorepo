@@ -1,5 +1,10 @@
-@use "sass:map";
+// media breakpoints
 
-// UI Library
-
-$library-prefix: 'ui';
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  2xl: 1400px,
+) !default;

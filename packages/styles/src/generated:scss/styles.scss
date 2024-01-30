@@ -1,0 +1,159 @@
+// This file is generated. Do not edit.
+
+$border-width: (
+	none: 0rem,
+	thin: 0.063rem,
+	medium: 0.125rem,
+	thick: 0.25rem,
+);
+
+:root {
+	--ui-bw-none: map-get($border-width, none);
+	--ui-bw-thin: map-get($border-width, thin);
+	--ui-bw-medium: map-get($border-width, medium);
+	--ui-bw-thick: map-get($border-width, thick);
+}
+
+$border-style: (
+	none: none,
+	solid: solid,
+	dashed: dashed,
+	dotted: dotted,
+	double: double,
+);
+
+:root {
+	--ui-bs-none: map-get($border-style, none);
+	--ui-bs-solid: map-get($border-style, solid);
+	--ui-bs-dashed: map-get($border-style, dashed);
+	--ui-bs-dotted: map-get($border-style, dotted);
+	--ui-bs-double: map-get($border-style, double);
+}
+
+$color: (
+	red-50: #fef2f2,
+	red-100: #fee2e2,
+	red-200: #fecaca,
+	red-300: #fca5a5,
+	red-400: #f87171,
+	red-500: #ef4444,
+	red-600: #dc2626,
+	red-700: #b91c1c,
+	red-800: #991b1b,
+	red-900: #7f1d1d,
+	red-950: #450a0a,
+);
+
+:root {
+	--ui-color-red-50: map-get($color, red-50);
+	--ui-color-red-100: map-get($color, red-100);
+	--ui-color-red-200: map-get($color, red-200);
+	--ui-color-red-300: map-get($color, red-300);
+	--ui-color-red-400: map-get($color, red-400);
+	--ui-color-red-500: map-get($color, red-500);
+	--ui-color-red-600: map-get($color, red-600);
+	--ui-color-red-700: map-get($color, red-700);
+	--ui-color-red-800: map-get($color, red-800);
+	--ui-color-red-900: map-get($color, red-900);
+	--ui-color-red-950: map-get($color, red-950);
+}
+
+$outline-width: (
+	thin: 0.063rem,
+	medium: 0.125rem,
+	thick: 0.25rem,
+);
+
+:root {
+	--ui-ow-thin: map-get($outline-width, thin);
+	--ui-ow-medium: map-get($outline-width, medium);
+	--ui-ow-thick: map-get($outline-width, thick);
+}
+
+$outline-style: (
+	none: none,
+	solid: solid,
+	dashed: dashed,
+	dotted: dotted,
+	double: double,
+);
+
+:root {
+	--ui-os-none: map-get($outline-style, none);
+	--ui-os-solid: map-get($outline-style, solid);
+	--ui-os-dashed: map-get($outline-style, dashed);
+	--ui-os-dotted: map-get($outline-style, dotted);
+	--ui-os-double: map-get($outline-style, double);
+}
+
+$outline-offset: (
+	none: 0rem,
+	sm: 0.063rem,
+	md: 0.125rem,
+	lg: 0.25rem,
+);
+
+:root {
+	--ui-oo-none: map-get($outline-offset, none);
+	--ui-oo-sm: map-get($outline-offset, sm);
+	--ui-oo-md: map-get($outline-offset, md);
+	--ui-oo-lg: map-get($outline-offset, lg);
+}
+
+$font-size: (
+	xs: (0.75rem, 1rem),
+	sm: (0.875rem, 1.25rem),
+	md: (1rem, 1.5rem),
+	lg: (1.125rem, 1.75rem),
+	xl: (1.25rem, 2rem),
+);
+
+:root {
+	--ui-fs-size-xs: nth(map-get($font-size, xs), 1);
+	--ui-fs-height-xs: nth(map-get($font-size, xs), 2);
+	--ui-fs-size-sm: nth(map-get($font-size, sm), 1);
+	--ui-fs-height-sm: nth(map-get($font-size, sm), 2);
+	--ui-fs-size-md: nth(map-get($font-size, md), 1);
+	--ui-fs-height-md: nth(map-get($font-size, md), 2);
+	--ui-fs-size-lg: nth(map-get($font-size, lg), 1);
+	--ui-fs-height-lg: nth(map-get($font-size, lg), 2);
+	--ui-fs-size-xl: nth(map-get($font-size, xl), 1);
+	--ui-fs-height-xl: nth(map-get($font-size, xl), 2);
+}
+
+$font-family: (
+	sans: "'Noto Sans', sans-serif",
+	serif: "'Noto Serif', serif",
+	mono: "'JetBrains Mono', monospace",
+);
+
+:root {
+	--ui-ff-sans: map-get($font-family, sans);
+	--ui-ff-serif: map-get($font-family, serif);
+	--ui-ff-mono: map-get($font-family, mono);
+}
+
+$font-weight: (
+	thin: 100,
+	extralight: 200,
+	light: 300,
+	normal: 400,
+	medium: 500,
+	semibold: 600,
+	bold: 700,
+	extrabold: 800,
+	black: 900,
+);
+
+:root {
+	--ui-fw-thin: map-get($font-weight, thin);
+	--ui-fw-extralight: map-get($font-weight, extralight);
+	--ui-fw-light: map-get($font-weight, light);
+	--ui-fw-normal: map-get($font-weight, normal);
+	--ui-fw-medium: map-get($font-weight, medium);
+	--ui-fw-semibold: map-get($font-weight, semibold);
+	--ui-fw-bold: map-get($font-weight, bold);
+	--ui-fw-extrabold: map-get($font-weight, extrabold);
+	--ui-fw-black: map-get($font-weight, black);
+}
+

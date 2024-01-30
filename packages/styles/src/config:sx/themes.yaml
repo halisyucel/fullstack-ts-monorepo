@@ -1,0 +1,8 @@
+- name: default
+  variables:
+    color:
+      primary: "red-50"
+      secondary: "red-100"
+      danger: "red-500"
+    font-size:
+      body: md

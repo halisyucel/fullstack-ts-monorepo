@@ -1,5 +1,5 @@
-@import '../abstracts/mixins';
-@import '../abstracts/functions';
+@import '../src/stylesheets/abstracts/mixins';
+@import '../src/stylesheets/abstracts/functions';
 
 @include generate('borderWidth', 'border-width', (
   'none': #{pxrem(0)},

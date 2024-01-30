@@ -13,7 +13,9 @@
     "format:check": "prettier -c 'src/**/*.ts'"
   },
   "dependencies": {
-    "commander": "^11.1.0"
+    "commander": "^11.1.0",
+    "js-yaml": "^4.1.0",
+    "yup": "^1.3.2"
   },
   "devDependencies": {
     "@monorepo/eslint-config-base": "^0.1.2",

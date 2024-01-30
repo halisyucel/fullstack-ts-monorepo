@@ -1,5 +1,8 @@
 import { program } from 'commander';
 
+import Parser from './parser';
+import Generator from './generator';
+
 program
 	.option('--ui-path <path>', 'path to the ui package', 'packages/ui')
 	.option(
@@ -13,4 +16,9 @@ program.parse();
 
 const options = program.opts();
 
-console.log(options);
+const parser = new Parser(options.stylesPath);
+const generator = new Generator(options.stylesPath);
+
+const sx = parser.parse();
+
+generator.generate(sx);

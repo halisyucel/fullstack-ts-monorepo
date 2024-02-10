@@ -1,12 +1,12 @@
 import fs from 'fs';
-import { Sx } from '../validation';
-import { StyleType } from '../types';
-import Generative from './generative';
+import { Sx } from '../../validation';
+import { StyleType } from '../../types';
+import Generative from '../Generative';
 
-class StyleGenerator implements Generative {
+export default class ScssGenerator implements Generative {
 	private sx: Sx;
 
-	private GENERATED_STYLES_FILE = 'src/generated:scss/styles.scss';
+	private GENERATED_STYLES_FILE = 'src/generated/scss/styles.scss';
 
 	constructor(sx: Sx) {
 		this.sx = sx;
@@ -87,5 +87,3 @@ class StyleGenerator implements Generative {
 		return `${Math.round((value / this.sx.config.fontSize) * 1000) / 1000}rem`;
 	}
 }
-
-export default StyleGenerator;

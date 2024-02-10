@@ -1,13 +1,13 @@
 import { Sx } from '../validation';
-import Generative from './generative';
-import StyleGenerator from './style-generator';
-import ThemeGenerator from './theme-generator';
+import Generative from './Generative';
+import ScssGenerator from './scss';
+import ThemeGenerator from './theme';
 
 class Generator implements Generative {
 	private generators: Generative[] = [];
 
 	public constructor(sx: Sx) {
-		this.generators.push(new StyleGenerator(sx));
+		this.generators.push(new ScssGenerator(sx));
 		this.generators.push(new ThemeGenerator(sx));
 	}
 

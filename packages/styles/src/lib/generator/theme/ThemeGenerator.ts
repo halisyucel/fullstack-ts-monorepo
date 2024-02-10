@@ -1,11 +1,11 @@
 import fs from 'fs';
-import Generative from './generative';
-import { Style, Sx } from '../validation';
+import Generative from '../Generative';
+import { Style, Sx } from '../../validation';
 
-class ThemeGenerator implements Generative {
+export default class ThemeGenerator implements Generative {
 	private sx: Sx;
 
-	private GENERATED_THEMES_FILE = 'src/generated:scss/themes.scss';
+	private GENERATED_THEMES_FILE = 'src/generated/scss/themes.scss';
 
 	constructor(sx: Sx) {
 		this.sx = sx;
@@ -75,5 +75,3 @@ class ThemeGenerator implements Generative {
 		throw new Error(`@monorepo/styles: style "${name}" not found`);
 	}
 }
-
-export default ThemeGenerator;

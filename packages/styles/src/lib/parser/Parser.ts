@@ -16,13 +16,13 @@ import {
 } from '../validation';
 
 class Parser {
-	private static STYLES_DIR = 'src/config:styles';
+	private static STYLES_DIR = 'src/config/styles';
 
-	private static PROPS_FILE = 'src/config:sx/props.yaml';
+	private static PROPS_FILE = 'src/config/sx/props.yaml';
 
-	private static CONFIG_FILE = 'src/config:sx/config.yaml';
+	private static CONFIG_FILE = 'src/config/sx/config.yaml';
 
-	private static THEMES_FILE = 'src/config:sx/themes.yaml';
+	private static THEMES_FILE = 'src/config/sx/themes.yaml';
 
 	public static parse(): Sx {
 		const props = this.parseProps();

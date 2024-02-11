@@ -5,8 +5,8 @@ export const propSchema = object({
 	type: string(),
 	style: string().required(),
 	output: object({
-		raw: string(),
-		generated: string(),
+		raw: string().required(),
+		generated: string().required(),
 	}).required(),
 })
 	.test({

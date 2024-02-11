@@ -2,6 +2,7 @@ import { array, object, string } from 'yup';
 
 export const propSchema = object({
 	prop: array().of(string().required()).required(),
+	type: string(),
 	style: string().required(),
 	output: object({
 		raw: string(),

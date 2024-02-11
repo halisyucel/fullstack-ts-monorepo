@@ -13,6 +13,7 @@ export default class ScssGenerator implements Generative {
 	}
 
 	public generate(): void {
+		// TODO: önce file'ı silmek terine temp oluşturup her şey başarılı olursa silmek daha mantıklı
 		if (fs.existsSync(this.GENERATED_STYLES_FILE)) {
 			fs.unlinkSync(this.GENERATED_STYLES_FILE);
 		}

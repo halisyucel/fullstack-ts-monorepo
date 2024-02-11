@@ -1,16 +1,19 @@
 - prop: [fs, fontSize]
+  type: fontSize
   style: font-size
   output:
     raw: "font-size: <0>;"
     generated: "font-size: <0>; line-height: <1>;"
 
 - prop: [fw, fontWeight]
+  type: fontWeight
   style: font-weight
   output:
     raw: "font-weight: <0>;"
     generated: "font-weight: <0>;"
 
 - prop: [ff, fontFamily]
+  type: fontFamily
   style: font-family
   output:
     raw: "font-family: <0>;"

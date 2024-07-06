@@ -1,6 +1,7 @@
+import { css } from '@emotion/css';
+
 import * as props from './props';
 import * as guards from './guards';
-import { css } from '@emotion/css';
 
 export type SxProps = {
 	fs?: props.SxFs;
@@ -9,6 +10,8 @@ export type SxProps = {
 	fontWeight?: props.SxFontWeight;
 	ff?: props.SxFf;
 	fontFamily?: props.SxFontFamily;
+	bg?: props.SxBg;
+	background?: props.SxBackground;
 };
 
 export default function sx({
@@ -18,6 +21,8 @@ export default function sx({
 	fontWeight,
 	ff,
 	fontFamily,
+	bg,
+	background,
 }: SxProps): string {
 	const emotion: string[] = [];
 
@@ -47,6 +52,15 @@ export default function sx({
 			emotion.push(`font-family: var(--ui-ff-${value});`);
 		} else {
 			emotion.push(`font-family: ${value};`);
+		}
+	}
+
+	if (!!bg || !!background) {
+		const value = bg || background;
+		if (guards.isSxColor(value)) {
+			emotion.push(`background: var(--ui-color-${value});`);
+		} else {
+			emotion.push(`background: ${value};`);
 		}
 	}
 

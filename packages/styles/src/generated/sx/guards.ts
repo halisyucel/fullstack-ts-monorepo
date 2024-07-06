@@ -1,5 +1,4 @@
 import * as types from './types';
-import * as props from './props';
 import * as enums from './enums';
 
 export function isSxBorderWidth(

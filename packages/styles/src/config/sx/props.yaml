@@ -18,3 +18,10 @@
   output:
     raw: "font-family: <0>;"
     generated: "font-family: <0>;"
+
+- prop: [bg, background]
+  type: background
+  style: color
+  output:
+    raw: "background: <0>;"
+    generated: "background: <0>;"

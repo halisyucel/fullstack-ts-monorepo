@@ -1,0 +1,20 @@
+- name: border-width
+  type: [pixel]
+  variable:
+    base: bw
+  value:
+    none: 0
+    thin: 1
+    medium: 2
+    thick: 4
+
+- name: border-style
+  type: [raw]
+  variable:
+    base: bs
+  value:
+    none: none
+    solid: solid
+    dashed: dashed
+    dotted: dotted
+    double: double

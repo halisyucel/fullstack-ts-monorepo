@@ -1,0 +1,17 @@
+@import '../src/stylesheets/abstracts/mixins';
+@import '../src/stylesheets/abstracts/functions';
+
+@include generate('borderWidth', 'border-width', (
+  'none': #{pxrem(0)},
+  'thin': #{pxrem(1)},
+  'medium': #{pxrem(2)},
+  'thick': #{pxrem(4)},
+));
+
+@include generate('borderStyle', 'border-style', (
+  'solid': solid,
+  'dashed': dashed,
+  'dotted': dotted,
+  'double': double,
+  'none': none,
+));

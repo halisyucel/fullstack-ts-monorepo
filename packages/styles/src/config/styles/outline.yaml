@@ -1,0 +1,29 @@
+- name: outline-width
+  type: [pixel]
+  variable:
+    base: ow
+  value:
+    thin: 1
+    medium: 2
+    thick: 4
+
+- name: outline-style
+  type: [raw]
+  variable:
+    base: os
+  value:
+    none: none
+    solid: solid
+    dashed: dashed
+    dotted: dotted
+    double: double
+
+- name: outline-offset
+  type: [pixel]
+  variable:
+    base: oo
+  value:
+    none: 0
+    sm: 1
+    md: 2
+    lg: 4

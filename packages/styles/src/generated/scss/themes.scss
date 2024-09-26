@@ -1,0 +1,11 @@
+// This file is generated automatically. Do not edit it manually.
+
+.ui-theme-default {
+	--ui-color-primary: map-get($color, red-50);
+	--ui-color-secondary: map-get($color, red-100);
+	--ui-color-danger: map-get($color, red-500);
+
+	--ui-fs-size-body: nth(map-get($font-size, md), 1);
+	--ui-fs-height-body: nth(map-get($font-size, md), 2);
+}
+

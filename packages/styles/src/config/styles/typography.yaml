@@ -1,0 +1,35 @@
+- name: font-size
+  type: [pixel, pixel]
+  variable:
+    base: fs
+    sub: [size, height]
+  value:
+    xs: [12, 16]
+    sm: [14, 20]
+    md: [16, 24]
+    lg: [18, 28]
+    xl: [20, 32]
+
+- name: font-family
+  type: [string]
+  variable:
+    base: ff
+  value:
+    sans: "'Noto Sans', sans-serif"
+    serif: "'Noto Serif', serif"
+    mono: "'JetBrains Mono', monospace"
+
+- name: font-weight
+  type: [raw]
+  variable:
+    base: fw
+  value:
+    thin: 100
+    extralight: 200
+    light: 300
+    normal: 400
+    medium: 500
+    semibold: 600
+    bold: 700
+    extrabold: 800
+    black: 900

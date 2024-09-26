@@ -1,0 +1,4 @@
+import { CSSProperties } from 'react';
+import * as types from './types';
+
+export type LiteralUnion<T extends U, U> = T | (U & { _?: never });
